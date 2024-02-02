@@ -6,8 +6,10 @@
 .main{
     display: flex;
     box-sizing: border-box;
-    border: 1px solid rgb(109, 109, 109);
     margin: 50px auto;
+    border: 1px solid rgb(167, 167, 167);
+    border-radius: 20px;
+    padding: 20px;
     height: 650px;
     width: 1000px;
 
@@ -15,10 +17,11 @@
 }
 .img-section{
     flex: 1 0 auto;
+    border-radius: 20px;
+    width: 35%;
     background-image: url(img/bg-form-2.jpg);
     background-size: auto 100%;
     background-position-x: right;
-    width: 35%;
 }
 .logo-wrapper{
     display: flex;
@@ -31,4 +34,22 @@
     background-color: rgba(0, 0, 0, 0.2);
     color: white;
 }
-
+.text-wrapper{
+    padding: 60px 40px 30px;
+}
+.form-wrapper{
+    padding-left: 40px;
+}
+form{
+}
+.form-row{
+    display: flex;
+    width: 100%;
+}
+.form-field{
+    background-color: aliceblue;
+    flex: 1;
+}
+.form-field label{
+    display: block;
+}
