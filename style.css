@@ -15,7 +15,7 @@
 
     font-family: "Rubik", "Helvetica", sans-serif;
     font-size: 16px;
-    color: #383f44;
+    color: #495054; /*#383f44 */
 }
 .img-section{
     flex: 1 0 auto;
@@ -37,7 +37,7 @@
     color: white;
 }
 .text-wrapper{
-    padding: 60px 40px 30px;
+    padding: 40px 40px 30px;
 }
 .form-wrapper{
     padding-left: 40px;
@@ -46,7 +46,7 @@ form{
     margin: 15px 0px;
 }
 .form-title{
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
 }
 .form-row{
@@ -75,4 +75,22 @@ form{
     padding-left: 12px;
     color: #FF7C7C;
     font-size: smaller;
+}
+.btn-submit{
+    box-sizing: border-box;
+    margin: 12px 0px;
+    border: 0px;
+    border-radius: 12px;
+    padding: 12px;
+    width: 240px;
+    background-color: #6db9e0; /*#78AEC8*/
+    color: white;
+    font-size: 16px;
+}
+.log-in-msg{
+    font-size: 14px;
+}
+.accent{
+    font-weight: bold;
+    color: #6db9e0;
 }
