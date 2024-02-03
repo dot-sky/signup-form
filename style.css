@@ -17,7 +17,8 @@
 
     font-family: "Rubik", "Helvetica", sans-serif;
     font-size: 16px;
-    color: #495054; /*#383f44 */
+    color: #495054;
+    /*#383f44 */
 }
 
 .img-section {
@@ -50,7 +51,7 @@
 }
 
 form {
-    margin: 15px 0px;
+    margin: 20px 0px;
 }
 
 .form-title {
@@ -92,7 +93,7 @@ form {
 
 .btn-submit {
     box-sizing: border-box;
-    margin: 12px 0px;
+    margin-top: 12px;
     border: 0px;
     border-radius: 12px;
     padding: 12px;
@@ -111,4 +112,45 @@ form {
 .accent {
     font-weight: bold;
     color: #6db9e0;
+}
+
+@media (max-width: 1000px) {
+    .img-section {
+        height: 200px;
+        background-size: 1000px;
+        background-position-x: center;
+    }
+    .logo-wrapper{
+        margin-top: 10px;
+    }
+    .main {
+        flex-wrap: wrap;
+        margin: 20px;
+        height: auto;
+        width: auto;
+
+    }
+
+    .form-row {
+        flex-wrap: wrap;
+        column-gap: 40px;
+    }
+
+    .text-wrapper {
+        padding: 20px;
+    }
+
+    .form-wrapper {
+        padding: 0px 20px;
+    }
+
+    .form-field input {
+        min-width: 250px;
+        width: 100%;
+    }
+
+    .btn-submit {
+        min-width: 250px;
+        width: 100%;
+    }
 }
