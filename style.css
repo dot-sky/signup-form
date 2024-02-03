@@ -8,7 +8,7 @@
 .main {
     display: flex;
     box-sizing: border-box;
-    margin: 50px auto;
+    margin: 45px auto;
     border: 1px solid rgb(167, 167, 167);
     border-radius: 20px;
     padding: 20px;
@@ -17,8 +17,7 @@
 
     font-family: "Rubik", "Helvetica", sans-serif;
     font-size: 16px;
-    color: #495054;
-    /*#383f44 */
+    color: #495054; /*#383f44 */
 }
 
 .img-section {
@@ -102,6 +101,7 @@ form {
     /*#78AEC8*/
     color: white;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .log-in-msg {
