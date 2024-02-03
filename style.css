@@ -62,12 +62,17 @@ form{
     margin-bottom: 6px;
 }
 .form-field input{
+    box-sizing: border-box;
     border: 1px solid #aaabab;   
-    border-radius: 6px;
-    padding: 12px;
-    width: 200px;
+    font-size: 100%;
+    color: inherit;
+    border-radius: 12px;
+    padding: 8px 12px;
+    width: 240px;
 }
 .form-field .invalid-msg{
+    margin-top: 2px;
+    padding-left: 12px;
     color: #FF7C7C;
     font-size: smaller;
 }
