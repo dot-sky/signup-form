@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap');
 
 * {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     background-color: #f7fbff;
 }
 
@@ -37,8 +38,10 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 
+    font-family: 'Cabin', "Rubik", "Helvetica", sans-serif;
+    font-size: 22px;
     margin-top: 180px;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.0);
@@ -101,7 +104,8 @@ form {
     border-radius: 12px;
     padding: 12px;
     width: 240px;
-    background-color: #81c3e1; /*#87B7CE*/
+    background-color: #81c3e1;
+    /*#87B7CE*/
     color: white;
     font-size: 16px;
     cursor: pointer;
@@ -111,6 +115,9 @@ form {
     font-size: 14px;
 }
 
+.text-wrapper .accent{
+    color: inherit; 
+}
 .accent {
     font-weight: bold;
     color: #81c3e1;
@@ -122,10 +129,11 @@ form {
         background-size: 1000px;
         background-position-x: center;
     }
-    .logo-wrapper{
-        margin-top: 10px;
 
+    .logo-wrapper {
+        margin-top: 10px;
     }
+
     .main {
         flex-wrap: wrap;
         margin: 20px;
@@ -133,10 +141,12 @@ form {
         width: auto;
 
     }
-    .text-wrapper{
+
+    .text-wrapper {
         margin: 5px 0px;
 
     }
+
     .form-row {
         flex-wrap: wrap;
         column-gap: 40px;
