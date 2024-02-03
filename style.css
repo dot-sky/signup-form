@@ -98,8 +98,7 @@ form {
     border-radius: 12px;
     padding: 12px;
     width: 240px;
-    background-color: #6db9e0;
-    /*#78AEC8*/
+    background-color: #81c3e1; /*#87B7CE*/
     color: white;
     font-size: 16px;
     cursor: pointer;
@@ -111,7 +110,7 @@ form {
 
 .accent {
     font-weight: bold;
-    color: #6db9e0;
+    color: #81c3e1;
 }
 
 @media (max-width: 1000px) {
@@ -122,6 +121,7 @@ form {
     }
     .logo-wrapper{
         margin-top: 10px;
+
     }
     .main {
         flex-wrap: wrap;
@@ -130,7 +130,10 @@ form {
         width: auto;
 
     }
+    .text-wrapper{
+        margin: 5px 0px;
 
+    }
     .form-row {
         flex-wrap: wrap;
         column-gap: 40px;
