@@ -89,7 +89,10 @@ form {
     padding: 8px 12px;
     width: 240px;
 }
-
+.form-field input:focus-visible {
+    outline: 1px solid #81c3e1;
+    border: 1px solid #81c3e1;
+}
 .form-field .invalid-msg {
     margin-top: 2px;
     padding-left: 12px;
