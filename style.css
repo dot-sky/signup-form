@@ -89,6 +89,9 @@ form {
     padding: 8px 12px;
     width: 240px;
 }
+.form-field input:placeholder{
+    color: #515A5D;
+}
 .form-field input:focus-visible {
     outline: 1px solid #81c3e1;
     border: 1px solid #81c3e1;
@@ -100,6 +103,26 @@ form {
     font-size: smaller;
 }
 
+.form-field .invalid-input {
+    border: 1px solid #FF7C7C;
+}
+.form-field .valid-input {
+    outline: 1px solid #7dd798;
+    border: 1px solid #7dd798;
+}
+.form-field .invalid-msg {
+    margin-top: 2px;
+    padding-left: 12px;
+    color: #FF7C7C;
+    font-size: smaller;
+}
+
+.form-field .invalid-input {
+    border: 1px solid #FF7C7C;
+}
+.form-field .valid-input {
+    border: 1px solid #7dd798;
+}
 .btn-submit {
     box-sizing: border-box;
     margin-top: 12px;
