@@ -1,12 +1,38 @@
+function validatePassword(){
+    let pwd1 = pwdInput.value.trim();
+    let pwd2 = pwdConfInput.value.trim();
+    console.log(pwd1);
+    console.log(pwd2);
+    if(pwd1.length !== 0){
+        return pwd1 === pwd2;
+    }
+    return false;
+}
 const BLANK_SPACE = "\u00A0";
 
 const inputs = document.querySelectorAll(".form-field input");
+const pwdInputs = document.querySelectorAll("input[type=password]");
+let pwdInput = pwdInputs[0];
+let pwdConfInput = pwdInputs[1];
+pwdInputs.forEach((elem) => {
+    elem.addEventListener("focusout", () => {
+        console.log(elem)
+        if (!validatePassword()){
+            pwdInput.setCustomValidity("invalid");
+            pwdConfInput.setCustomValidity("invalid");
+        }
+        else{
+            console.log("match")
+            pwdInput.setCustomValidity("");
+            pwdConfInput.setCustomValidity("");
+        }
+    });
+})
 inputs.forEach((elem) => {
     elem.addEventListener("focusout", () => {
         if (!elem.checkValidity()) {
             const input = elem.getAttribute("id");
             const errorLabel= elem.nextElementSibling;
-            console.log(input);
             switch (input) {
                 case "name":
                     errorLabel.textContent = "This field can't be left empty";
