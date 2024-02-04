@@ -29,7 +29,7 @@
                 <form action="post">
                     <div class="form-row">
                         <div class="form-field">
-                            <label for="name">First Name</label>
+                            <label for="name">First Name <span aria-label="required">*</span></label>
                             <input type="text" name="name" id="name" required>
                             <div class="invalid-msg">&nbsp;</div>
                         </div>
@@ -41,8 +41,8 @@
                     </div>
                     <div class="form-row">
                         <div class="form-field">
-                            <label for="email">Email</label>
-                            <input type="email" name="email" id="email" placeholder="you@safemind.com">
+                            <label for="email">Email <span aria-label="required">*</span></label>
+                            <input type="email" name="email" id="email" placeholder="you@safemind.com" required>
                             <div class="invalid-msg">&nbsp;</div>
                         </div>
                         <div class="form-field">
@@ -54,12 +54,12 @@
                     </div>
                     <div class="form-row">
                         <div class="form-field">
-                            <label for="pwd">Password</label>
+                            <label for="pwd">Password <span aria-label="required">*</span></label>
                             <input type="password" name="pwd" id="pwd" required>
                             <div class="invalid-msg">&nbsp;</div>
                         </div>
                         <div class="form-field">
-                            <label for="pwd-con">Confirm Password</label>
+                            <label for="pwd-con">Confirm Password <span aria-label="required">*</span></label>
                             <input type="password" name="pwd-con" id="pwd-conf" required>
                             <div class="invalid-msg">&nbsp;</div>
                         </div>
