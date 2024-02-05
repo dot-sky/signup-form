@@ -62,10 +62,13 @@ inputs.forEach((elem) => {
             elem.classList.add("invalid-input");
             elem.classList.remove("valid-input");
         }
-        else {
+        else if (elem.value !== ""){
             elem.classList.remove("invalid-input");
             elem.classList.add("valid-input");
             elem.nextElementSibling.textContent = BLANK_SPACE;
+        }
+        else{
+            elem.classList.remove("valid-input");
         }
     })
 })
