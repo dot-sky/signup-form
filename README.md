@@ -1,5 +1,5 @@
 # Sign Up Form
-Signup for safe mind web app. The design was made with HTML, CSS and JavaScript.
+Signup for safe mind web app. The design made with HTML, CSS and JavaScript.
 
 The form has a responsive design to fit desktop, tablets and mobile screens.
 
@@ -11,4 +11,4 @@ Passwords have to be at least 6 characters long to be valid and both password in
 ## Credits:
 Background Image by <a href="https://unsplash.com/@hikendal?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Kendal</a> on <a href="https://unsplash.com/photos/white-trees-RLlwhlh0KpM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
   
-Icon by: <a href="https://www.flaticon.com/free-icons/cloud" title="cloud icons">Freepik - Flaticon</a>
+Icon by <a href="https://www.flaticon.com/free-icons/cloud" title="cloud icons">Freepik - Flaticon</a>
