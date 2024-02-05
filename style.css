@@ -168,6 +168,9 @@ form {
     font-weight: bold;
     color: var(--primary-color);
 }
+a{
+    text-decoration: none;
+}
 
 @media (max-width: 1000px) {
     .img-section {
