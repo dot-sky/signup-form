@@ -1,7 +1,7 @@
 function validatePassword() {
     const pwd1 = mainPwdInput.value.trim();
     const pwd2 = confPwdInput.value.trim();
-    if (pwd1.length !== 0) {
+    if (pwd1.length >= 6) {
         return pwd1 === pwd2;
     }
     return false;
@@ -20,12 +20,16 @@ pwdInputs.forEach((elem) => {
             pwdInputs.forEach((inputElem) => {
                 inputElem.classList.add("invalid-input");
                 inputElem.classList.remove("valid-input");
-                inputElem.setCustomValidity("Passwords do not match");
+                if (mainPwdInput.value.trim().length < 6) {
+                    pwdErrorLabel.textContent = "Password needs to be longer";
+                    inputElem.setCustomValidity("Password needs to be at least"
+                        + " 6 characters long");
+                }
+                else {
+                    pwdErrorLabel.textContent = "Passwords do not match";
+                    inputElem.setCustomValidity("Passwords do not match");
+                }
             })
-            if (mainPwdInput.value.trim().length === 0)
-                pwdErrorLabel.textContent = "Please enter your password";
-            else
-                pwdErrorLabel.textContent = "Passwords do not match";
         }
         else {
             pwdInputs.forEach((inputElem) => {
