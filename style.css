@@ -168,7 +168,8 @@ form {
     font-weight: bold;
     color: var(--primary-color);
 }
-a{
+
+a {
     text-decoration: none;
 }
 
