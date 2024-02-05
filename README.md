@@ -1,12 +1,14 @@
-# signup-form
-Signup form design made with html, css and javascript.
+# Sign Up Form
+Signup for safe mind web app. The design was made with HTML, CSS and JavaScript.
+
+The form has a responsive design to fit desktop, tablets and mobile screens.
+
+Client side validation is performed for every required input it also display feedback to users to fix the data they have entered.
+
 Passwords have to be at least 6 characters long to be valid and both password inputs have to match to be able to send the form. 
 
 
-Credits:
-Image by: https://unsplash.com/photos/white-trees-RLlwhlh0KpM
-Icon by: <a href="https://www.flaticon.com/free-icons/cloud" title="cloud icons">Cloud icons created by Freepik - Flaticon</a>
-
-change validation messages and update password validation
-
-Add visual cues to show user when an input value is invalid. Update password validation algorithm, passwords can't be left empty and passwords should match to be valid. The form would only send data when all the required inputs are completed and valid.
+## Credits:
+Background Image by <a href="https://unsplash.com/@hikendal?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Kendal</a> on <a href="https://unsplash.com/photos/white-trees-RLlwhlh0KpM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+  
+Icon by: <a href="https://www.flaticon.com/free-icons/cloud" title="cloud icons">Freepik - Flaticon</a>
