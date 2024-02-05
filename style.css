@@ -172,7 +172,14 @@ form {
 a {
     text-decoration: none;
 }
-
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    margin: 30px 10px 0px;
+    font-size: 14px;
+}
 @media (max-width: 1000px) {
     .img-section {
         height: 200px;
