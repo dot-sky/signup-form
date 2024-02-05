@@ -6,8 +6,10 @@
     --secondary-bg: #f7fbff;
     --shadow-color: #acacac;
     --disabled-color: #aaabab;
-    --success-color: #9AE19D; /* #7dd798;*/
-    --warning-color: #EF6461; /* #FF7C7C;*/
+    --success-color: #9AE19D;
+    /* #7dd798;*/
+    --warning-color: #EF6461;
+    /* #FF7C7C;*/
     --font-normal: #495054;
 }
 

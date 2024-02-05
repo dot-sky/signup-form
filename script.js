@@ -1,9 +1,7 @@
-function validatePassword(){
-    let pwd1 = pwdInput.value.trim();
-    let pwd2 = pwdConfInput.value.trim();
-    console.log(pwd1);
-    console.log(pwd2);
-    if(pwd1.length !== 0){
+function validatePassword() {
+    const pwd1 = mainPwdInput.value.trim();
+    const pwd2 = confPwdInput.value.trim();
+    if (pwd1.length !== 0) {
         return pwd1 === pwd2;
     }
     return false;
@@ -12,45 +10,53 @@ const BLANK_SPACE = "\u00A0";
 
 const inputs = document.querySelectorAll(".form-field input");
 const pwdInputs = document.querySelectorAll("input[type=password]");
-let pwdInput = pwdInputs[0];
-let pwdConfInput = pwdInputs[1];
+const mainPwdInput = pwdInputs[0];
+const confPwdInput = pwdInputs[1];
+const pwdErrorLabel = mainPwdInput.nextElementSibling;
+
 pwdInputs.forEach((elem) => {
     elem.addEventListener("focusout", () => {
-        console.log(elem)
-        if (!validatePassword()){
-            pwdInput.setCustomValidity("invalid");
-            pwdConfInput.setCustomValidity("invalid");
+        if (!validatePassword()) {
+            pwdInputs.forEach((inputElem) => {
+                inputElem.classList.add("invalid-input");
+                inputElem.classList.remove("valid-input");
+                inputElem.setCustomValidity("Passwords do not match");
+            })
+            if (mainPwdInput.value.trim().length === 0)
+                pwdErrorLabel.textContent = "Please enter your password";
+            else
+                pwdErrorLabel.textContent = "Passwords do not match";
         }
-        else{
-            console.log("match")
-            pwdInput.setCustomValidity("");
-            pwdConfInput.setCustomValidity("");
+        else {
+            pwdInputs.forEach((inputElem) => {
+                inputElem.classList.add("valid-input");
+                inputElem.classList.remove("invalid-input");
+                inputElem.setCustomValidity("");
+            })
+            pwdErrorLabel.textContent = BLANK_SPACE;
         }
     });
 })
 inputs.forEach((elem) => {
     elem.addEventListener("focusout", () => {
+        if (elem.getAttribute("type") === "password")
+            return;
         if (!elem.checkValidity()) {
+            const errorLabel = elem.nextElementSibling;
             const input = elem.getAttribute("id");
-            const errorLabel= elem.nextElementSibling;
             switch (input) {
-                case "name":
-                    errorLabel.textContent = "This field can't be left empty";
+                case "phone":
+                    errorLabel.textContent = "Enter a valid phone number";
                     break;
                 case "email":
                     errorLabel.textContent = "Enter a valid email";
                     break;
-                case "pwd":
-                    errorLabel.textContent = "Passwords do not match";
-                    break;
-                case "pwd-conf":
-                    errorLabel.textContent = BLANK_SPACE;
-                    break;
                 default:
-                    errorLabel.textContent = "Invalid input";
+                    errorLabel.textContent = "This field can't be left empty";
                     break;
             }
             elem.classList.add("invalid-input");
+            elem.classList.remove("valid-input");
         }
         else {
             elem.classList.remove("invalid-input");
