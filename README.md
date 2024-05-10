@@ -3,7 +3,7 @@ Signup for safe mind web app. The design made with HTML, CSS and JavaScript.
 
 The form has a responsive design to fit desktop, tablets and mobile screens.
 
-Client side validation is performed for every required input it also display feedback to users to fix the data they have entered.
+Client side validation is performed for each required input, it also displays feedback to users to fix the data they have entered.
 
 Passwords have to be at least 6 characters long to be valid and both password inputs have to match to be able to send the form. 
 ## See it live!
